@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Intro from './components/Intro';
+import Navbar from './components/Navbar';
+import Body from './components/Body';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello there i am trying to make a blog</h1>
+      <Navbar />
+      <Intro />
+      <Body />
     </div>
   );
 }
