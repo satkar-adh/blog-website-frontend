@@ -37,19 +37,39 @@
   }
 }
 
-.navbar{
+.navbar {
   display: flex;
-  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
 }
 
-.navbar ::after {
-  width:100%;
-  height:10px;
-  position:absolute;
-  bottom:0;
-  left:0;
-  background:#337AB7;
-  border-radius:5px;
+.logo {
+  height: 50px; /* Adjust based on your logo size */
+}
+
+.navelement, .search-button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Adjust width as needed */
 }
 
 .navelement{
@@ -84,4 +104,99 @@
   flex-direction: column;
   position: 200px, 200px;
 
+}
+
+.options button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.options button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Add space between form groups */
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+input[type="submit"],
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem; /* Add space above the buttons */
+}
+
+button + button {
+  margin-left: 0.5rem; /* Add space between the buttons */
+}
+
+.table-container {
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  overflow-x: auto; /* Allows table to scroll on small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders between cells are merged */
+  background-color: #f8f9fa; /* Light background for the table */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds shadow for 3D effect */
+}
+
+th, td {
+  border: 1px solid #dee2e6; /* Light grey border for cells */
+  padding: 12px 15px; /* Spacing within cells */
+  text-align: left;
+}
+
+th {
+  background-color: #007bff; /* Blue background for headers */
+  color: #ffffff; /* White text color */
+  font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Alternate rows have white background */
+}
+
+tbody tr:hover {
+  background-color: #f1f3f5; /* Light grey background on row hover */
+}
+
+thead {
+  position: sticky;
+  top: 0; /* Ensures header sticks at the top on scroll */
+  z-index: 10;
 }
