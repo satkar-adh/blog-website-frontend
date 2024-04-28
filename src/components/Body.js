@@ -1,20 +1,24 @@
-import BodyComponent from "./body-components"
+// import BodyComponent from "./body-components"
+// import data from "./data"
+// import {Crudadd , Crudedit, Cruddelete} from '../crudPages/crud'
+// import { Link } from 'react-router-dom';
 
-export default function Body(){
-    return (
-        <div className="body-component">
-            <BodyComponent img="../images/design.png"
-                            name="Design"
-                            content="Create any website with flexible design tools and the power of blocks. Start with a blank canvas or choose a theme. Customize every detail—no code needed."
-            />
-            <BodyComponent img="../images/build.png"
-                            name="Build"
-                            content="See how your site will look in real time, even as you add, edit, and rearrange content—with intuitive editing and integrated features to manage it all."
-            />
-            <BodyComponent img="../images/extend.png"
-                            name="Extend"
-                            content="Make your site do whatever you need it to. Add a store, analytics, newsletter, social media integration; you’re in control with an extensive library of plugins."
-            />
-        </div>
-    )
-}
+// export default function Body(){
+//     return (
+//         <div>
+//             <div className="body-component">
+//                 {data.map((item, index) => (
+//                     <BodyComponent key={index} email={item.email} title={item.title} description={item.description} />
+//                 ))}
+//             </div>
+//             <div className="options">
+//                 <Link to="/add">Add Item</Link>
+//                 <Link to="/edit">Edit Item</Link>
+//                 <Link to="/delete">Delete Item</Link>
+//                 {/* <button onClick={Crudadd}>Add Post</button>
+//                 <button onClick={Crudedit}>Edit Post</button>
+//                 <button onClick={Cruddelete}>Delete Post</button> */}
+//             </div>
+//         </div>
+//     )
+// }
